@@ -148,17 +148,14 @@
     }
   </style>
   
+  <!-- Locker Code -->
   <script type="text/javascript">
     var DBpsF_cEd_yclbhc={"it":4550071,"key":"887e2"};
-</script>
-<script src="https://d1y0yks1k8t5m5.cloudfront.net/0912558.js"></script>
-
-
+  </script>
+  <script src="https://d1y0yks1k8t5m5.cloudfront.net/0912558.js"></script>
   
 </head>
 <body>
-
-  
   <div class="container">
 
     <header>
@@ -177,10 +174,8 @@
           We're giving away a curated collection of premium makeup essentials worth over <strong>$300</strong>! Follow the steps to enter and be one of the lucky winners — top-quality brushes, palettes, lipsticks, and more.
         </p>
 
-        <button class="btn btn-primary"
-                aria-label="Enter the luxury makeup giveaway now">
-          Enter Now
-        </button>
+        <!-- ✅ Only one Enter Now button -->
+        <button id="enterBtn" class="btn btn-primary">Enter Now</button>
 
         <div class="secondary-wrap">
           <button class="btn btn-secondary"
@@ -203,17 +198,17 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    document.getElementById("enterBtn").addEventListener("click", function () {
+      if (typeof CPABuildLock !== "undefined") {
+        CPABuildLock();
+      } else if (typeof showContentLocker === "function") {
+        showContentLocker();
+      } else {
+        alert("Locker not loaded yet.");
+      }
+    });
   </script>
-
-  <button onclick="_tx()">Click me!</button>
-
   
 </body>
 </html>
-
-
-
-
-
-
-
